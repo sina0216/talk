@@ -1,0 +1,20 @@
+$bg-color: #D2E0FB;
+$main-color: #b6cbf7;
+$my-color:#a7c3ff;
+$gray1: #61615a;
+$gray2: #a1a199;
+$gray3: #e6e3e3;
+$gray4: #f3f2f2;
+
+$opacityBlack: rgba(0, 0, 0, .2);
+
+@mixin set-box($height, $width: 100%, $border-radius: 0) {
+  height: $height;
+  width: $width;
+  border-radius: $border-radius;
+}
+
+@mixin set-border($color: #808080, $width: 1px, $radius: 6px) {
+  border: $color $width 1px solid;
+  border-radius: $radius;
+}

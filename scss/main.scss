@@ -1,0 +1,12 @@
+@import './reset';
+@import './varMixin';
+@import './layout';
+@import './component';
+
+@import './index';
+@import './chatList';
+@import './chat'
+
+
+
+//sass --watch scss/main.scss:css/style.css

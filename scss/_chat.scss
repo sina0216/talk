@@ -1,0 +1,158 @@
+.chat {
+  @include set-box(100%)
+}
+
+.header_menu {
+  i {
+    margin: 5px;
+  }
+}
+
+.chat_screen {
+  background: $bg-color;
+  height: calc(100% - 140px);
+  overflow: auto;
+
+  .chat_header {
+    padding: 0 10px;
+    align-items: center;
+    background: $bg-color;
+
+    .preview_title {
+      font-size: 1.2rem;
+      margin-bottom: 0.2rem;
+    }
+
+    .chat_num {
+      color: $gray2;
+
+      i {
+        font-size: 0.75rem;
+        vertical-align: baseline;
+      }
+
+      span {
+        font-size: 0.8rem;
+      }
+    }
+  }
+
+  .bubble_container {
+    .bubble_wrap {
+      .bubble_con {
+        display: flex;
+
+        .bubble {
+          position: relative;
+          max-width: 80%;
+          @include set-box(auto, auto, 4px);
+          padding: 10px;
+          margin-top: 6px;
+          background: #fff;
+          box-shadow: 2px 2px 10px $opacityBlack;
+
+          p {
+            //5줄만 보이게 하기
+            display: -webkit-box;
+            word-wrap: break-word;
+            -webkit-line-clamp: 5;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            text-overflow: ellipsis;
+          }
+
+          &::before {
+            @include set-box(0, 0);
+            position: absolute;
+            content: "";
+            top: 10px;
+            left: -10px;
+            border-bottom: 10px solid transparent;
+            border-right: 10px solid #fff;
+          }
+
+        }
+
+        .bubble_time {
+          display: flex;
+          align-items: self-end;
+          padding-left: 6px;
+          font-size: 0.8rem;
+        }
+
+      }
+    }
+  }
+
+  .bubble_preview.my {
+    flex-direction: row-reverse;
+
+    .preview_title,
+    .preview_pic {
+      display: none;
+    }
+
+    .bubble_con {
+      flex-direction: row-reverse;
+
+      .bubble {
+        background: $my-color;
+
+        &::before {
+          left: auto !important;
+          right: -10px;
+          border-top: 10px solid $my-color;
+          border-right: 10px solid transparent;
+        }
+      }
+
+      .bubble_time {
+        padding-right: 6px;
+      }
+    }
+  }
+}
+
+
+
+.chat_form {
+  height: 140px;
+  background: #adc8ff;
+  padding: 10px;
+
+  .chat_form_msg {
+    @include set-box(75px);
+    resize: none;
+    border: none;
+    outline: none;
+  }
+
+  .chat_form_util {
+    display: flex;
+    justify-content: space-between;
+
+    .chat_form_util_plugIn {
+      i {
+        margin-left: 10px;
+        color: $gray2;
+        margin-top: 10px;
+
+        &:hover {
+          color: #000;
+        }
+      }
+    }
+
+    .chat_form_btn {
+      @include set-box(35px, 65px, 6px);
+      border: none;
+      color: $gray1;
+      background: $bg-color;
+
+      &:hover {
+        background: lighten($gray1, 20%);
+        background: #8aadf8;
+      }
+    }
+  }
+}

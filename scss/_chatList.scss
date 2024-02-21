@@ -1,0 +1,16 @@
+.chats{
+  margin-left: 70px;
+
+  .preview_wrap {
+    display: block;
+
+    .preview {      
+      &:hover {
+        background: $gray4
+      }
+      .preview_col {
+        &:nth-child(1) { margin-right:16px; }
+      }
+    }
+  }
+}

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>채팅화면</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <div class="chat">
+    <main class="chat_screen">
+      <header class="header chat_header">
+        <div class="preview">
+          <div class="preview_col">
+            <div class="preview_pic"><img src="img/KakaoTalk_20240221_144739803_02.jpg" alt="" class="List_img"></div>
+          </div>
+          <div class="preview_col">
+            <h4 class="preview_title">아가씨들 귀가 하셨습니까?🔔</h4>
+            <p class="preview_msg chat_num">
+              <i class="fa-solid fa-user fa-xl"></i>
+              <span>4</span>
+            </p>
+          </div>
+
+        </div>
+        <div class="header_menu">
+          <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+          <a href="#"><i class="fa-regular fa-comments"></i></a>
+          <a href="#"><i class="fa-solid fa-paperclip"></i></a>
+        </div>
+      </header>
+
+      <section class="bubble_container">
+
+        <div class="preview bubble_preview">
+          <div class="preview_col">
+            <div class="preview_pic"><img src="img/KakaoTalk_20240221_145711762.jpg" alt="" class="List_img"></div>
+          </div>
+          <div class="preview_col bubble_wrap">
+            <h4 class="preview_title">유저 1</h4>
+            <div class="bubble_con">
+              <p class="bubble">이번에 우리 간곳 재밌지 않았어?</p>
+              <span class="bubble_time">오후 2:34</span>
+            </div>
+          </div>
+        </div>
+        <div class="preview bubble_preview">
+          <div class="preview_col">
+            <div class="preview_pic"><img src="img/KakaoTalk_20240221_144739803_01.jpg" alt="" class="List_img"></div>
+          </div>
+          <div class="preview_col bubble_wrap">
+            <h4 class="preview_title">유저 2</h4>
+            <div class="bubble_con">
+              <div class="bubble">
+                <p>맞아~ 진짜 재밌었어~</p>
+              </div>
+              <span class="bubble_time">오후 2:34</span>
+            </div>
+          </div>
+        </div>
+        <div class="preview bubble_preview">
+          <div class="preview_col">
+            <div class="preview_pic"><img src="img/KakaoTalk_20240221_145711762_02.jpg" alt="" class="List_img"></div>
+          </div>
+          <div class="preview_col bubble_wrap">
+            <h4 class="preview_title">유저 3</h4>
+            <div class="bubble_con">
+              <div class="bubble">
+                <p>아 다음에 또 가고싶다~</p>
+              </div>
+              <span class="bubble_time">오후 2:35</span>
+            </div>
+          </div>
+        </div>
+        <div class="preview bubble_preview">
+          <div class="preview_col">
+            <div class="preview_pic"><img src="img/KakaoTalk_20240221_145711762.jpg" alt="" class="List_img"></div>
+          </div>
+          <div class="preview_col bubble_wrap">
+            <h4 class="preview_title">유저1</h4>
+            <div class="bubble_con">
+              <div class="bubble">
+                <p>ㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋ</p>
+              </div>
+              <span class="bubble_time">오후 2:36</span>
+            </div>
+          </div>
+        </div>
+        <div class="preview bubble_preview my">
+          <div class="preview_col">
+            <div class="preview_pic"></div>
+          </div>
+          <div class="preview_col bubble_wrap">
+            <h4 class="preview_title">유저 이름</h4>
+            <div class="bubble_con">
+              <div class="bubble">
+                <p>우리 다음에는 어디 갈까? 이번 3월에 제주도에 지브리 테마파크 공식으로 오픈한다는데
+                  우리 제주도나 가볼까?</p>
+              </div>
+              <span class="bubble_time">오후 2:40</span>
+            </div>
+          </div>
+        </div>
+        <div class="preview bubble_preview">
+          <div class="preview_col">
+            <div class="preview_pic"><img src="img/KakaoTalk_20240221_145711762_02.jpg" alt="" class="List_img"></div>
+          </div>
+          <div class="preview_col bubble_wrap">
+            <h4 class="preview_title">유저 3</h4>
+            <div class="bubble_con">
+              <div class="bubble">
+                <p>제주도 좋지~ 제주도로 갈까?</p>
+              </div>
+              <span class="bubble_time">오후 2:42</span>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <form action="" class="chat_form">
+      <div class="chat_form_field">
+        <textarea class="chat_form_msg"></textarea>
+      </div>
+      <div class="chat_form_util">
+        <div class="chat_form_util_plugIn">
+          <i class="fa-regular fa-face-smile" title="이모티콘 Ctrl+E"></i>
+          <i class="fa-regular fa-calendar" title="일정"></i>
+          <i class="fa-solid fa-paperclip" title="파일전송 Ctrl+T"></i>
+          <i class="fa-solid fa-crop-simple" title="캡쳐 Ctrl+Shift+C"></i>
+        </div>
+        <div class="chat_form_util_submit">
+          <input type="submit" value="전송" class="chat_form_btn">
+        </div>
+      </div>
+    </form>
+  </div>
+</body>
+
+</html>
